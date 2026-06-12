@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سنابل | Sanaabel Fast Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <div class="logo-icon">🌾</div>
+        <div class="logo-text">
+          <span class="logo-ar">سنابل</span>
+          <span class="logo-en">SANAABEL</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#menu">القائمة</a></li>
+        <li><a href="#about">مميزاتنا</a></li>
+        <li><a href="#contact">اطلب الآن</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-tag">🌾 طازج · لذيذ · سريع</div>
+      <h1 class="hero-title">
+        <span class="line-one">سنابل</span>
+        <span class="line-two">نكهة</span>
+        <span class="line-three">البيت</span>
+      </h1>
+      <p class="hero-sub">شاورما · برجر · وجبات سريعة بأجود المكونات</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">اكتشف القائمة ←</a>
+        <a href="#contact" class="btn-ghost">اطلب الآن</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>+30</strong><span>صنف شهي</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>١٠٠٪</strong><span>مكونات طازجة</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>سريع</strong><span>توصيل لبابك</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="shawarma-art">
+        <div class="sa-glow"></div>
+        <div class="sa-plate"></div>
+        <div class="sa-wrap"></div>
+        <div class="sa-steam st1"></div>
+        <div class="sa-steam st2"></div>
+        <div class="sa-steam st3"></div>
+        <div class="sa-icon">🌯</div>
+      </div>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">قائمة الطعام</span>
+        <h2 class="section-title">اختر وجبتك</h2>
+        <p class="section-sub">أشهى الأصناف بمكونات طازجة يومياً</p>
+      </div>
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-cat="shawarma">🌯 شاورما</button>
+        <button class="tab" data-cat="burgers">🍔 برجر</button>
+        <button class="tab" data-cat="chicken">🍗 دجاج</button>
+        <button class="tab" data-cat="sides">🍟 إضافات</button>
+        <button class="tab" data-cat="combos">🎯 وجبات</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip" id="about">
+    <div class="container">
+      <div class="strip-grid">
+        <div class="strip-item reveal">
+          <div class="strip-icon-wrap"><span>🌾</span></div>
+          <strong>طازج يومياً</strong>
+          <p>مكونات طازجة تصل كل يوم لضمان أعلى جودة</p>
+        </div>
+        <div class="strip-item reveal">
+          <div class="strip-icon-wrap"><span>🌯</span></div>
+          <strong>شاورما أصيلة</strong>
+          <p>وصفة خاصة بتتبيلة البيت ونكهة لا تُنسى</p>
+        </div>
+        <div class="strip-item reveal">
+          <div class="strip-icon-wrap"><span>⚡</span></div>
+          <strong>توصيل سريع</strong>
+          <p>وجبتك ساخنة وطازجة في أقل وقت ممكن</p>
+        </div>
+        <div class="strip-item reveal">
+          <div class="strip-icon-wrap"><span>💛</span></div>
+          <strong>أسعار مناسبة</strong>
+          <p>جودة عالية بأسعار تناسب الجميع</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-text reveal">
+          <span class="eyebrow">تواصل معنا</span>
+          <h2 class="section-title">اطلب الآن</h2>
+          <p class="contact-desc">يسعدنا خدمتك — تواصل عبر واتساب وسنوصل لك وجبتك ساخنة وطازجة</p>
+          <a href="https://wa.me/966500000000" class="btn-primary btn-wa" target="_blank">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.122 1.523 5.855L0 24l6.335-1.493A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.371l-.359-.213-3.72.876.942-3.626-.234-.372A9.818 9.818 0 1112 21.818z"/></svg>
+            تواصل عبر واتساب
+          </a>
+        </div>
+        <div class="contact-cards reveal">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <strong>الموقع</strong>
+              <p>المملكة العربية السعودية</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🕐</div>
+            <div>
+              <strong>أوقات العمل</strong>
+              <p>يومياً ١٢ ظهراً – ١٢ منتصف الليل</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🚚</div>
+            <div>
+              <strong>التوصيل</strong>
+              <p>توصيل سريع لباب بيتك</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="logo">
+          <div class="logo-icon">🌾</div>
+          <div class="logo-text">
+            <span class="logo-ar">سنابل</span>
+            <span class="logo-en">SANAABEL</span>
+          </div>
+        </div>
+        <p>© 2025 سنابل — جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
